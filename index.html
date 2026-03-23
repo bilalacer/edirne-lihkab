@@ -165,7 +165,7 @@
     footer p{font-size:12px;color:var(--text3)}
 
     /* ── ANİMASYON ── */
-    .fade{opacity:0;transform:translateY(16px);transition:opacity 0.55s,transform 0.55s}
+    .fade{opacity:1;transform:none;transition:opacity 0.55s,transform 0.55s}
     .fade.in{opacity:1;transform:none}
 
     /* ── RESPONSIVE ── */
@@ -345,7 +345,7 @@
     <h2 class="section-title fade">Geliştirdiğimiz Uygulamalar</h2>
     <div class="title-bar fade"></div>
     <div class="apps-grid">
-      <a href="https://bilalacer.github.io/utm-latlon-coklu" target="_blank" class="app fade">
+      <a href="https://bilalacer.github.io/utm-latlon-ncn-kml01/" target="_blank" class="app fade">
         <div class="app-badge">Web Uygulaması</div>
         <h3>UTM ↔ Lat/Lon Koordinat Dönüştürücü</h3>
         <p>ITRF96 3° sisteminde UTM koordinatlarını coğrafi koordinatlara dönüştüren web tabanlı uygulama. NCN ve KML/KMZ dosyası desteği, Google uydu harita görüntüleme.</p>
@@ -428,13 +428,4 @@
       <img src="lihkab_logo.png" alt="LİHKAB" style="width:36px;height:36px;object-fit:contain">
       <span>Edirne LİHKAB — Bilal ACER</span>
     </a>
-    <p>© 2026 Bilal ACER — Tüm hakları saklıdır.</p>
-  </div>
-</footer>
-<script>
-var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:0.08});
-document.querySelectorAll('.fade').forEach(function(el){obs.observe(el)});
-setTimeout(function(){document.querySelectorAll('.hero .fade').forEach(function(el){el.classList.add('in')})},100);
-</script>
-</body>
-</html>
+    <p>
